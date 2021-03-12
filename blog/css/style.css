@@ -1,0 +1,182 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@import{
+    font-family:josefinslab-regular;
+    src: url(../fonts/josefinslab-reglar) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+html {
+  font-family: sans-serif;
+    font-size:16px;
+}
+header {
+    
+} 
+main {
+    overflow:auto;
+    min-width:45rem;
+    margin:0 auto;
+    width:90%;
+}
+nav {
+    margin:0;
+    width:100%;
+    height: auto;
+    border: 2px;
+    align-content: center;
+    border-style: groove;
+}
+figure {
+    width:60%;
+    margin:0 10% 0 0;
+    float:left;
+}
+
+figure img {
+    width:100%;
+    max-width:25rem;
+}
+body {
+   align-content: center;
+}
+aside {
+    float: right;
+    text-align: inherit;
+    width: 33%;
+    border-left: 2px;
+    border-color: black;
+    border-left-style: solid;
+    padding-left: 1rem;
+}
+footer {
+    clear: both;
+    margin-top:1.5rem auto;
+    border-top: 2px black solid;
+    width: 90%;
+    text-align: center;
+    overflow: auto;
+}
+p {
+    text-align: left;
+    width: 80%;
+    display: flex;
+}
+h1 {
+    padding: 1rem;
+    margin-bottom: 1px;
+    border-bottom: 1rem;
+    background-color: dimgrey;
+    text-align: center;
+    font-size: 2rem;
+    float: none;
+    font-family: josefinslab-regular, serif;
+}
+h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: crimson;
+    font-family: serif;
+}
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: firebrick;
+    font-family: serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 3rem;
+    width: 100%;
+}
+li a {
+    display: inline;
+    float: left;
+    text-align: center;
+    color: black;
+    padding: 0rem 1rem 0rem 1rem;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: crimson;
+    color: aliceblue;
+}
+article {
+    float: left;
+    width: 47%;
+}
+.highlight {
+    text-shadow: 0px 10px 10px red;
+}
+.main-section {
+    font-size: .75rem;
+    text-align: left;
+    float: left;
+}
+.article-image {
+    width: 30%;
+    height: inherit;
+    padding: 0;
+}
+.subsection {
+    display: flex;
+    flex: 80%;
+    padding: .25rem;
+    float: left;
+    width: 100%;
+}
+.expand {
+    text-decoration: none;
+    font-size: 30%;
+    padding: none;
+}
+
